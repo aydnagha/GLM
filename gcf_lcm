@@ -1,0 +1,18 @@
+#Finding GCF
+
+def GCF(num_1, num_2):
+ numbers = []
+
+ for x in range(1,max(num_1,num_2)+1):
+  if num_1 % x == 0 and num_2 % x == 0:
+   numbers.append(x)
+
+ max_num = max(numbers)
+ return max_num
+
+#Finding LCM
+
+def LCM(num_1,num_2):
+ least_number = a * b / GCF(num_1,num_2)
+
+return least_number
